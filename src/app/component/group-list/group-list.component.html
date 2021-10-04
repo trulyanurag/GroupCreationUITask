@@ -1,0 +1,51 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row mt20">
+            <div class="col-md-6 offset-3 text-center">
+                <h1>Search Group</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="text-center">
+    <label class="mr20 ml20">Name</label>
+    <mat-form-field appearance="outline">
+        <input [(ngModel)]="group.name" matInput placeholder="Group Name">
+    </mat-form-field>
+</div>
+<div class="text-center">
+    <button mat-raised-button color="primary" (click)="findUser()">Search</button>
+</div>
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row mt20">
+            <div class="col-md-12 offset-md-3">
+<mat-card *ngIf="card" class="example-card ">
+    <mat-card-title>{{groupDetail.name}}</mat-card-title>
+    <mat-card-content>
+      <p>{{groupDetail.description}}</p>
+    </mat-card-content>
+  </mat-card>
+            </div></div></div></div>
+<table *ngIf="card" mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table mt20">
+    <!-- Position Column -->
+    <ng-container matColumnDef="demo-id">
+      <th mat-header-cell *matHeaderCellDef> id. </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="demo-name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="demo-image">
+      <th mat-header-cell *matHeaderCellDef> Image </th>
+      <td mat-cell *matCellDef="let element"> <img  src="{{element.image}}" alt="Photo of a Shiba Inu"> </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>

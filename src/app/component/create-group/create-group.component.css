@@ -1,0 +1,79 @@
+.example-card {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  .content {
+    padding: 16px;
+}
+
+.content > mat-card {
+    margin-bottom: 16px;
+}
+.align-right{
+  float: right;
+}
+.align-left{
+  float: left;
+}
+section {
+  display: table;
+}
+.example-button-row {
+  display: table-cell;
+  width: 550px;
+}
+
+
+input[type="checkbox"]{
+  display: none;
+}
+
+.label2 {
+  border: 1px solid #fff;
+  padding: 20px;
+  display: block;
+  position: relative;
+  margin: 0px;
+  cursor: pointer;
+}
+
+.label2:before {
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+
+
+:checked + .label2 {
+  border-color: #ddd;
+}
+
+:checked + .label2:before{
+  content: "✓";
+  background-color: rgb(66, 66, 231);
+  transform: scale(1);
+}
+
+:checked + .label2 img {
+  transform: scale(0.9);
+  box-shadow: 0 0 5px #333;
+  z-index: -1;
+}

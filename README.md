@@ -6,22 +6,24 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Requirement to run this project
+1. Node.js
+2. [Angular CLI] version 12.2.3.
+3. VS code(editor)
+4. npm 
+5. JSON Api Server
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## JSON API SERVER installation process
+1. Run npm install -g json-server in terminal
+2. Start JSON Server run json-server --watch db.json
 
-## Build
+## How to use this project
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Search http://localhost:4200/ on browser to show Home page 
+2. you have two options ("create group" and "Groups") at right side of navigation bar
+3. click on "Create Group" to navigate to Create Group Page
+4. On Create Group page  enter group name and group description then users from below list and click "update" button
+Note: no fuctionality is provided to remove button
+5. click on "Groups" at right side of tool bar to navigate to Search group (already created).
+6. enter group name to search.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

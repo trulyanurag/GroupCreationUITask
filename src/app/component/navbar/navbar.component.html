@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+    <a routerLink="/" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>home</mat-icon>
+    </a>
+    <span>Caavo Task</span>
+    <span class="example-spacer"></span>
+    <a  routerLink="/users" mat-button>
+      Create Group
+    </a>
+    <a [routerLink]="'/groups'" mat-button  >
+      Groups
+    </a>
+  </mat-toolbar>

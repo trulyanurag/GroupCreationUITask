@@ -1,0 +1,210 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Veer yavle",
+      "image": "../../../assets/boy.jpeg",
+      "enabled": ""
+    },
+    {
+      "id": "2",
+      "name": "Jhon Walker",
+      "image": "../../../assets/boy.jpeg",
+      "enabled": ""
+    },
+    {
+      "id": "3",
+      "name": "Janet Marry",
+      "image": "../../../assets/girl.jpeg",
+      "enabled": ""
+    },
+    {
+      "id": "4",
+      "name": "Rahul Singh",
+      "image": "../../../assets/boy.jpeg",
+      "enabled": ""
+    },
+    {
+      "id": "5",
+      "name": "Shrish Sood",
+      "image": "../../../assets/boy.jpeg",
+      "enabled": ""
+    },
+    {
+      "id": "6",
+      "name": "Riyas Shet",
+      "image": "../../../assets/girl.jpeg",
+      "enabled": ""
+    },
+    {
+      "id": "7",
+      "name": "Naga Arjun",
+      "image": "../../../assets/boy.jpeg",
+      "enabled": ""
+    },
+    {
+      "id": "8",
+      "name": "Anni ",
+      "image": "../../../assets/girl.jpeg",
+      "enabled": ""
+    },
+    {
+      "id": "9",
+      "name": "Gufran Khan",
+      "image": "../../../assets/boy.jpeg",
+      "enabled": ""
+    }
+  ],
+  "groups": [
+    {
+      "name": "team1",
+      "description": "girls group",
+      "users": [
+        {
+          "id": "3",
+          "name": "Janet Marry",
+          "image": "../../../assets/girl.jpeg",
+          "enabled": true
+        },
+        {
+          "id": "6",
+          "name": "Riyas Shet",
+          "image": "../../../assets/girl.jpeg",
+          "enabled": true
+        },
+        {
+          "id": "8",
+          "name": "Anni ",
+          "image": "../../../assets/girl.jpeg",
+          "enabled": true
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "team2",
+      "description": "hello",
+      "users": [
+        {
+          "id": "7",
+          "name": "Naga Arjun",
+          "image": "../../../assets/boy.jpeg",
+          "enabled": true
+        },
+        {
+          "id": "8",
+          "name": "Anni ",
+          "image": "../../../assets/girl.jpeg",
+          "enabled": true
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "team3",
+      "description": "hey",
+      "users": [
+        {
+          "id": "1",
+          "name": "Veer yavle",
+          "image": "../../../assets/boy.jpeg",
+          "enabled": true
+        },
+        {
+          "id": "2",
+          "name": "Jhon Walker",
+          "image": "../../../assets/boy.jpeg",
+          "enabled": true
+        },
+        {
+          "id": "5",
+          "name": "Shrish Sood",
+          "image": "../../../assets/boy.jpeg",
+          "enabled": true
+        }
+      ],
+      "id": 3
+    },
+    {
+      "name": "myteam",
+      "description": "hero",
+      "users": [
+        {
+          "id": "4",
+          "name": "Rahul Singh",
+          "image": "../../../assets/boy.jpeg",
+          "enabled": true
+        },
+        {
+          "id": "5",
+          "name": "Shrish Sood",
+          "image": "../../../assets/boy.jpeg",
+          "enabled": true
+        }
+      ],
+      "id": 4
+    },
+    {
+      "name": "pathsala",
+      "description": "the place to excel",
+      "users": [
+        {
+          "id": "3",
+          "name": "Janet Marry",
+          "image": "../../../assets/girl.jpeg",
+          "enabled": true
+        },
+        {
+          "id": "4",
+          "name": "Rahul Singh",
+          "image": "../../../assets/boy.jpeg",
+          "enabled": true
+        },
+        {
+          "id": "5",
+          "name": "Shrish Sood",
+          "image": "../../../assets/boy.jpeg",
+          "enabled": true
+        },
+        {
+          "id": "7",
+          "name": "Naga Arjun",
+          "image": "../../../assets/boy.jpeg",
+          "enabled": true
+        },
+        {
+          "id": "8",
+          "name": "Anni ",
+          "image": "../../../assets/girl.jpeg",
+          "enabled": true
+        }
+      ],
+      "id": 5
+    },
+    {
+      "name": "Team5",
+      "description": "we are Rock Stars",
+      "users": [
+        {
+          "id": "3",
+          "name": "Janet Marry",
+          "image": "../../../assets/girl.jpeg",
+          "enabled": true
+        },
+        {
+          "id": "4",
+          "name": "Rahul Singh",
+          "image": "../../../assets/boy.jpeg",
+          "enabled": true
+        },
+        {
+          "id": "5",
+          "name": "Shrish Sood",
+          "image": "../../../assets/boy.jpeg",
+          "enabled": true
+        }
+      ],
+      "id": 6
+    }
+  ]
+}

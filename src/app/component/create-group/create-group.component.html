@@ -1,0 +1,52 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row mt20">
+            <div class="col-md-6 offset-3 text-center">
+                <h1>Create Group</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row mt20">
+            <div class="col-md-12 offset-md-3">
+                <mat-card class="example-card align-left">
+                    <img class="example-card mr20" mat-card-image src="../../../assets/boy.jpeg"
+                        alt="Photo">
+                </mat-card>
+                <div class="">
+                    <label class="mr100 ml20">Name</label>
+                    <mat-form-field appearance="outline">
+                        <input [(ngModel)]="group.name" matInput placeholder="Group Name" (ngModelChange)="reload()" (focus)="input=input+1">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <br><br>
+                    <label class=" mr5 ml20">Description</label>
+                    <mat-form-field appearance="outline">
+                        <input [(ngModel)]="group.description"matInput placeholder="Description">
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><br>
+<div class="content ml100">
+    <div fxLayout='row wrap' fxLayoutGap="16px grid">
+   
+        <div fxFlex="18%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let i of b ">
+            <input  type="checkbox" id="cb{{i.id}}"  [(ngModel)]="i.enabled" />
+            <label class="label2" for="cb{{i.id}}">
+                <mat-card>
+                    <img mat-card-image src="{{i.image}}" alt="Photo of a Shiba Inu">
+                    <mat-card-title class="text-center">{{i.name}}</mat-card-title>
+                </mat-card>
+            </label>
+        </div>
+    </div>
+</div>
+<div class="text-center">
+    <button mat-raised-button color="primary" (click)="enabled()">Update</button>
+    <button style="margin-left: 20px;" mat-raised-button color="warn">Remove</button>
+</div>
